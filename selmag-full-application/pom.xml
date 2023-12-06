@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ag.selm</groupId>
+        <artifactId>selmag-parent</artifactId>
+        <version>23.1.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>selmag-full-application</artifactId>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ag.selm</groupId>
+            <artifactId>catalogue-api-adapter-spring-webmvc</artifactId>
+            <version>23.1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ag.selm</groupId>
+            <artifactId>catalogue-spi-adapter-spring-jdbc</artifactId>
+            <version>23.1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ag.selm</groupId>
+            <artifactId>catalogue-core</artifactId>
+            <version>23.1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ag.selm</groupId>
+            <artifactId>customer-api-adapter-spring-webmvc</artifactId>
+            <version>23.1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ag.selm</groupId>
+            <artifactId>customer-spi-catalogue-adapter-spring-cache</artifactId>
+            <version>23.1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ag.selm</groupId>
+            <artifactId>customer-spi-catalogue-adapter-direct</artifactId>
+            <version>23.1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ag.selm</groupId>
+            <artifactId>customer-core</artifactId>
+            <version>23.1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
